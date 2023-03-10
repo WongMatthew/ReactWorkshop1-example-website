@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import yellowOtterImg from './images/yellow otter.png';
+import blueOtterImg from './images/blue otter.png';
+import React from 'react';
+import Otter from './components/Otter';
+import Jokes from './components/Jokes';
+import JokeButton from './components/JokeButton';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Otter name="Otter" imageSrc={yellowOtterImg} color="yellow" />
+      <Otter name="Otter" imageSrc={blueOtterImg} color="blue" />
+
+      <Jokes />
+      <JokeButton />
     </div>
   );
 }

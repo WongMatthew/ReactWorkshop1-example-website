@@ -4,7 +4,6 @@ import blueOtterImg from './images/blue otter.png';
 import React from 'react';
 import Otter from './components/Otter';
 import Jokes from './components/Jokes';
-import JokeButton from './components/JokeButton';
 
 function App() {
   return (

@@ -8,12 +8,13 @@ import JokeButton from './components/JokeButton';
 
 function App() {
   return (
-    <div>
-      <Otter name="Otter" imageSrc={yellowOtterImg} color="yellow" />
-      <Otter name="Otter" imageSrc={blueOtterImg} color="blue" />
+    <div className="container">
+      <div>
+        <Otter name="Otter" imageSrc={yellowOtterImg} color="yellow" />
+        <Otter name="Otter" imageSrc={blueOtterImg} color="blue" />
 
-      <Jokes />
-      <JokeButton />
+        <Jokes />
+      </div>
     </div>
   );
 }
